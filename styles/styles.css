@@ -1,0 +1,43 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+}
+
+
+/* Left Half of screen */
+.hero-left {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/left-hero.png");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.color-overlay {
+  background-color: rgba(40, 238, 167, 0.93);
+  background-image: none;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+
+
+
+/* Right Half of screen */
+.hero-right {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.85),
+      rgba(35, 35, 35, 0.85)
+    ),
+    url("../assets/images/right-hero.png");
+  background-size: cover;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
