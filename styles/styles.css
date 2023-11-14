@@ -35,12 +35,12 @@
     transform: translateX(-65px)translateY(-279px);
 }
 
-.hero-left-wrapper > h1 , .hero-left-wrapper > a , .hero-left-wrapper > span{
+.hero-title, .hero-left-wrapper > a , .hero-badge{
     margin-right: 50px;
    align-self: flex-end;
 }
 
-.hero-left-wrapper > h1 > span{
+.hero-subtitle{
     width: 250px;
     height: 33px;
     color: white;
@@ -48,7 +48,7 @@
     padding: 0 10PX;
 }
 
-.hero-left-wrapper > p{
+.hero-description{
     width: 550px;
     height: 96px;
     margin: 40px;
@@ -58,7 +58,7 @@
     
 }
 
-.hero-left-wrapper > a{
+.hero-link{
     width: 155px;
     height: 46px;
     color: aliceblue;
