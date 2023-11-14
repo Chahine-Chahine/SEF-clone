@@ -32,15 +32,24 @@
 .logo{
     width: 187px;
     height: 50px;
-    transform: translateX(-65px)translateY(-279px);
+    transform: translateX(25px)translateY(-235px);
 }
 
-.hero-title, .hero-left-wrapper > a , .hero-badge{
-    margin-right: 50px;
+.hero-title{
+    align-self: flex-end;
+} 
+
+.hero-badge{
    align-self: flex-end;
+   display: flex;
+   align-items: flex-end;
+   transform: translateX(0px)translateY(20px);
+   font-size: 36px;
+   color: white;
 }
 
-.hero-subtitle{
+
+.hero-subtitle1{
     width: 250px;
     height: 33px;
     color: white;
@@ -52,10 +61,13 @@
     width: 550px;
     height: 96px;
     margin: 40px;
-    text-align: right;
     font-size: 16px;
     line-height: 1.5;
     
+}
+
+.align-right{
+    text-align: right;
 }
 
 .hero-link{
@@ -66,23 +78,67 @@
     text-align: center;
     padding-top: 10px;
     text-decoration: none;
+   align-self: flex-end;
+}
+
+.right{
+    margin-right: 50px;
 }
 
 
 
 /* Right Half of screen */
 .hero-right {
-  width: 100%;
+    width: 100%;
   height: 100%;
   background-image: linear-gradient(
       rgba(35, 35, 35, 0.85),
       rgba(35, 35, 35, 0.85)
-    ),
-    url("../assets/images/right-hero.png");
-  background-size: cover;
-  align-items: center;
-  padding-top: 120px;
-  padding-bottom: 60px;
-  display: flex;
-}
+      ),
+      url("../assets/images/right-hero.png");
+      background-size: cover;
+      align-items: center;
+      padding-top: 145px;
+      padding-bottom: 60px;
+      display: flex;
+    }
 
+.hero-right-wrapper{
+    margin-top: 25px;
+}
+    .hero-subtitle2{
+        width: 250px;
+        height: 33px;
+        color: #363738;
+        background-color: white;
+        padding: 0 10PX;
+    }
+    
+    .left{
+        margin-left: 50px;
+    }
+
+    .hero-description2{
+        width: 550px;
+        height: 96px;
+        margin: 35px 40px 20px 40px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: white;
+    }
+    .hero-link2{
+        width: 155px;
+        height: 45px;
+        background-color: aliceblue;
+        color: #2b2c2c;
+        padding-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin-top: 30px;
+    }
+
+    .menue{
+        display: inline-block;
+        transform: translateX(565px)translateY(-250px);
+    }
