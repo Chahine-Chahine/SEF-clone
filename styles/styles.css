@@ -48,6 +48,32 @@
    color: white;
 }
 
+.sentence {
+  position: relative;
+  color: black;
+}
+
+
+.sentence::after {
+content: '';
+position: absolute;
+right: -20px;
+bottom: 6px;
+width: 18px;
+height: 6px;
+background-color: white;
+animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 
 .hero-subtitle1{
     width: 250px;
@@ -63,7 +89,7 @@
     margin: 40px;
     font-size: 16px;
     line-height: 1.5;
-    
+    /* transform: translateX(200px); */
 }
 
 .align-right{
@@ -140,6 +166,8 @@
         top: 5%;
         right: 18%;
         z-index: 2;
+        background-color: #363738;
+        border-radius: 8px;
     }
 
     /* Burger Menue */
