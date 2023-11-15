@@ -1,11 +1,3 @@
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-
 document.addEventListener('DOMContentLoaded', function () {
   const sentences = [
     'SOFTWARE ENGINEER?',
@@ -61,3 +53,4 @@ document.getElementById("menue-icon").innerHTML =
   `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`
   document.getElementById("myNav").style.width = "100%";
 })
+
