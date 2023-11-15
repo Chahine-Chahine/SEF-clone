@@ -335,7 +335,7 @@ animation: blink 0.5s linear infinite;
         justify-content: space-between;
       }
 
-      .yhead-title{
+      .head-title{
         line-height: 1.4;
         text-align: left;
         font-size: 24px;
@@ -343,7 +343,7 @@ animation: blink 0.5s linear infinite;
         font-family: "Noto Sans Mono";
       }
 
-      .y-symbol{
+      .symbol{
         color: rgba(40, 238, 167, 0.93);
          font-size: 36px;
          font-weight: 800;
@@ -365,7 +365,7 @@ animation: blink 0.5s linear infinite;
       .green{
         background-color: rgba(40, 238, 167, 0.93);
       }
-      .ytext-wrapper{
+      .text-wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -381,4 +381,85 @@ animation: blink 0.5s linear infinite;
         object-fit: fill;
         border: 15px solid rgba(40, 238, 167, 0.93);
         border-radius: 20px;
+      }
+      .milestones-section{
+        position: relative;
+        top: 70px;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .milestones-head{
+        width: 61%;
+        height: 60px;
+        display: flex;
+        transform: translateY(-40px);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      
+      .milestone-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: #f1f2f3;
+        padding: 50px;
+        border-radius: 10px;
+        margin: 10px 10px 10px 80px;
+        
+      }
+      
+      .milestone-title {
+        font-size: 60px;
+        font-weight: 900;
+        color: black bold;
+      }
+      
+      .percentage {
+        font-size: 100px;
+      }
+      
+      .milestone-subtitle {
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      
+      .milestone-big {
+        width: 50%;
+        height: 500px;
+      }
+      
+      .milestone-small {
+        height: 250px;
+        display: inline-block;
+        margin: 0;
+        width: 400px;
+      }
+      
+      .milestones-container {
+        display: flex;
+        height: 250px;
+      }
+      
+      .milestone-container-right {
+        max-width: 50%;
+      }
+      
+      .milestone-row {
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+      }
+
+      .milestone-description{
+        margin-top: 40px;
+        font-size: 26px;
+        color: #363738;
+        font-weight: 100;
       }
