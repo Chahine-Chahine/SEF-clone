@@ -168,10 +168,10 @@
       }
       
       .overlay a {
+        font-size: 30px;
         padding: 8px;
         text-decoration: none;
-        font-size: 36px;
-        color: #818181;
+        color: #a5a6a9;
         display: block;
         transition: 0.3s;
       }
@@ -199,10 +199,16 @@
 
         .login-container{
         width: 500px;
-        height: 540px;
+        height: 400px;
         background-color: #363738;
+        border-radius: 25px;
         }
 
-        .home-a{
-            color: rgba(40, 238, 167, 0.93);
+        .login-title{
+            text-align: left;
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 1.4;   
+            color: white;
+            margin-left: 15px;
         }
