@@ -223,6 +223,10 @@ animation: blink 0.5s linear infinite;
         }
         .menu-right{
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
         }
 
         .login-container{
@@ -278,3 +282,36 @@ animation: blink 0.5s linear infinite;
         .red{
           background-color: #fb4747;
         }
+
+        .hr-container {
+          width: 100%;
+          height: 160px;
+          display: flex;
+          align-items: center; 
+          background-color: #31b7f0;
+          margin-top: 30px;
+          border-radius: 20px;
+      }
+      
+      .hr-img {
+        transform: translateX(20px);
+      }
+      
+      .hr-text {
+          flex: 1; 
+          color: white;
+          margin-left: 50px;
+          text-align: left;
+      }
+      
+      .hr-text h2 {
+          font-size: 26;
+          margin-bottom: 10px;
+          color: white;
+      }
+      
+      .hr-text h3 {
+          font-size: 16px;
+          color: white;
+          font-weight: 200;
+      }
