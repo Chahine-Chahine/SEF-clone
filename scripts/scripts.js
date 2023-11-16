@@ -47,22 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(handleAnimation, speed);
 });
 
-// let burger_menue = document.getElementById("burger-menue");
-// burger_menue.addEventListener("click", ()=>{
-// document.getElementById("menue-icon").innerHTML =
-//   `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`
-//   document.getElementById("myNav").style.width = "100%";
-// })
 
 let burger_menue = document.getElementById("burger-menue");
 
-if (burger_menue.textContent = (`<imgsrc="./assets/images/menu-icon.svg"alt="Menue Icon"class="menue"id="burger-menue"/>`)){
+if (burger_menue.innerHTML = (`<imgsrc="./assets/images/menu-icon.svg"alt="Menue Icon"class="menue"id="burger-menue"/>`)){
   burger_menue.addEventListener("click", ()=>{
     document.getElementById("menue-icon").innerHTML =
       `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`
       document.getElementById("myNav").style.width = "100%";
     })
-}else if (burger_menue.textContent = `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`) {
+}else if (burger_menue.innerHTML = `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`) {
   burger_menue.addEventListener("click", ()=>{
     document.getElementById("menue-icon").innerHTML =
       `<img src="./assets/images/menu-icon.svg" alt="Menue Icon" class="menue id="burger-menue"/>`
