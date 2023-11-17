@@ -834,7 +834,7 @@ img {
     background-color: #232323;
     color: #fcfcfd;
     cursor: pointer;
-    padding: 18px;
+    padding: 32px;
     width: 100%;
     border: none;
     text-align: left;
@@ -853,6 +853,7 @@ img {
   }
   .accordion-wrapper{
     position: relative;
-    top: 245px;
+    top: 145px;
     width: 60%;
   }
+  
