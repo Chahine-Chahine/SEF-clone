@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
     'UI/UX DESIGNER?'
   ];
 
-  // Corrected the rgba function and added missing 'rgba' prefix
+  // Color list for manipulating the overlay id
   let color_list = ['rgba(40, 238, 167, 0.93)', 'rgba(152, 100, 218, 0.93)', 'rgba(251, 80, 142, 0.93)'];
 
   let currentIndex = 0;
   let offset = 0;
   const sentenceElement = document.querySelector('.sentence');
-  const overlayElement = document.getElementById('overlay'); // Added overlay element reference
+  const overlayElement = document.getElementById('overlay'); 
   let forwards = true;
   let skipCount = 0;
   const skipDelay = 15;
@@ -47,22 +47,22 @@ document.addEventListener('DOMContentLoaded', function () {
   setInterval(handleAnimation, speed);
 });
 
+// Menue Icon
+let menue_icon = document.getElementById("menue-icon");
+let close_icon = document.getElementById("close-icon");
 
-let burger_menue = document.getElementById("burger-menue");
+menue_icon.addEventListener("click", () => {
+  document.getElementById("myNav").style.width = "100%";
+  menue_icon.style.display = "none";
+  close_icon.style.display = "block";
+})
 
-if (burger_menue.innerHTML = (`<imgsrc="./assets/images/menu-icon.svg"alt="Menue Icon"class="menue"id="burger-menue"/>`)){
-  burger_menue.addEventListener("click", ()=>{
-    document.getElementById("menue-icon").innerHTML =
-      `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`
-      document.getElementById("myNav").style.width = "100%";
-    })
-}else if (burger_menue.innerHTML = `<img src="./assets/images/close-icon.svg" alt="Menue Icon" class="menue">`) {
-  burger_menue.addEventListener("click", ()=>{
-    document.getElementById("menue-icon").innerHTML =
-      `<img src="./assets/images/menu-icon.svg" alt="Menue Icon" class="menue id="burger-menue"/>`
-      document.getElementById("myNav").style.width = "0%";
-    })
-}
+close_icon.addEventListener("click" , () => {
+  document.getElementById("myNav").style.width = "0%";
+  menue_icon.style.display = "block";
+  close_icon.style.display = "none";
+
+})
 
 // carousel
 let slideIndex = 1;
@@ -105,3 +105,6 @@ function autoSlide() {
 
 // Start the automatic slideshow
 autoSlide();
+
+
+// Accordion
