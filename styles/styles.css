@@ -562,7 +562,7 @@
   margin-right: 1rem;
 }
 
-.program-explanation {
+.program-bio {
   color: #f1f2f3;
   font-size: 16px;
   font-weight: 400;
@@ -570,7 +570,7 @@
   font-family: "Noto Sans Mono";
 }
 
-.course-appointments {
+.date-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

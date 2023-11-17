@@ -1,3 +1,4 @@
+// Header Section color/typing effect
 document.addEventListener('DOMContentLoaded', function () {
   const sentences = [
     'SOFTWARE ENGINEER?',
@@ -68,8 +69,8 @@ close_icon.addEventListener("click" , () => {
 document.addEventListener('DOMContentLoaded', function () {
   const programButtons = document.querySelectorAll('.tabs-head')
 
-  // Define an array of sections, each with its own set of properties
-  const sections = [
+  // Classify Objects
+  const objectlist = [
     {
       image: './assets/images/fcs-tab.png',
       explanation: '// This 9-week course covers fundamental topics in computer science, including data structures, algorithms, and foundational concepts. It is suitable for coding enthusiasts, former computer science students, and beginners who wish to learn Python programming, object-oriented programming, file systems, and more. The course includes online video materials, assignments, and instructor-led sessions.',
@@ -105,40 +106,41 @@ document.addEventListener('DOMContentLoaded', function () {
  
   programButtons.forEach(function (button, index) {
     button.addEventListener('click', function () {
-      
-      programButtons.forEach(function (btn) {  // Remove 'defualt' class from all buttons
+       
+       // Remove 'defualt' class from all buttons
+      programButtons.forEach(function (btn) { 
         btn.classList.remove('defualt')
         btn.style.color = ''
       })
 
       // Add 'defualt' class to the clicked button
       button.classList.add('defualt')
-      button.style.color = sections[index].color
+      button.style.color = objectlist[index].color
       
       // Update image source according to the button clicked
       const programImage = document.querySelector('.program-img')
-      programImage.innerHTML = `<img src="${sections[index].image}"  alt="design-10" class="program-image-decoration">`
+      programImage.innerHTML = `<img src="${objectlist[index].image}"  alt="design-10" class="program-image-decoration">`
 
-      // Update program explanation text
-      const programExplanation = document.querySelector('.program-explanation')
-      programExplanation.textContent = sections[index].explanation
+      // Update program bio text
+      const programExplanation = document.querySelector('.program-bio')
+      programExplanation.textContent = objectlist[index].explanation
 
-      // Update program explanation title
+      // Update program head
       const titleAbbr = document.querySelector('#tab-1')
-      titleAbbr.textContent = sections[index].title1
+      titleAbbr.textContent = objectlist[index].title1
 
        const titleExplanation = document.querySelector('#tab-2')
-       titleExplanation.textContent = sections[index].title2
+       titleExplanation.textContent = objectlist[index].title2
       
        //change the color for all elements with the class "toggle-color"
        const differentColorSpans = document.querySelectorAll('.toggle-color')
        differentColorSpans.forEach(function(span) {
-         span.style.color = sections[index].color
+         span.style.color = objectlist[index].color
        })
       
       // Update color of the background
       const sectionColor = document.querySelector('.overlay-defualt')
-      sectionColor.style.backgroundColor = sections[index].color
+      sectionColor.style.backgroundColor = objectlist[index].color
         
     })
   
